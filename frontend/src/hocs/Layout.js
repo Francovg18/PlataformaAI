@@ -1,0 +1,40 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { check_authenticated, load_user, refresh } from '../redux/actions/auth';
+
+
+import {
+    get_user_profile
+} from "../redux/actions/profile";
+
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
+import Navbar from '../components/navigation/Navbar';
+import Footer from '../components/navigation/Footer';
+
+const Layout = (props) => {
+
+    useEffect(() => {
+        props.refresh()
+        props.check_authenticated()
+        props.load_user()
+        props.get_user_profile()
+    }, []);
+
+    return(
+        <div>
+            <Navbar/>
+            <ToastContainer autoClose={5000} />
+            {props.children}
+            <Footer/>
+        </div>
+    )
+}
+
+
+export default connect(null, {
+    check_authenticated,
+    load_user,
+    refresh,
+    get_user_profile
+}) (Layout)
