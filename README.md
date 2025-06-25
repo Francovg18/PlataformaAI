@@ -33,7 +33,7 @@ Este es un proyecto plataforma educativa
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/Francovg18/ecommerce.git
+git clone https://github.com/Francovg18/PlataformaAI.git
 cd ecommerce
 ```
 
@@ -78,7 +78,7 @@ python manage.py runserver
 ```
 ecommerce/
 ├── backend/              # Proyecto Django
-│   └── apps/             # Apps internas (user, products, cart, etc.)
+│   └── apps/             # Apps internas (user, etc.)
 │   └── requirements.txt  # Dependencias Python
 ├── frontend/             # Proyecto React
 ├── .env                  # Variables de entorno
