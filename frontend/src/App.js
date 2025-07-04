@@ -13,6 +13,7 @@ const Activate = lazy(() => import('./containers/auth/Activate'));
 const ResetPassword = lazy(() => import('./containers/auth/ResetPassword'));
 const ResetPasswordConfirm = lazy(() => import('./containers/auth/ResetPasswordConfirm'));
 const Dashboard = lazy(() => import('./containers/pages/Dashboard'));
+const Chat = lazy(() => import('./components/Chatbot/Chat'));
 const MathLessonModule = lazy(() => import('./components/course/MathLessonModule'));
 const MathAdventureGame = lazy(() => import('./components/miniGames/MathAdventureGame'));
 function App() {
@@ -35,6 +36,7 @@ function App() {
 
             {/* Dashboard */}
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/chat" element={<Chat />} />
             <Route path="/courses/:id/start" element={<MathLessonModule />} />
             <Route path="/matematicas" element={<MathAdventureGame />} />
 

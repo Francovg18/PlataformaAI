@@ -61,10 +61,13 @@ const Navbar = ({ isAuthenticated, user, logout }) => {
               </Link>
 
               <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-2 bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-md cursor-pointer transition-colors duration-200">
-                  <ChatIcon className="h-4 w-4 text-blue-600" />
-                  <span className="text-sm font-medium text-blue-700">Asistente IA</span>
-                </div>
+                <Link
+  to="/chat"
+  className="flex items-center space-x-2 bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-md cursor-pointer transition-colors duration-200"
+>
+  <ChatIcon className="h-4 w-4 text-blue-600" />
+  <span className="text-sm font-medium text-blue-700">Asistente IA</span>
+</Link>
 
                 <div className="flex items-center space-x-2 bg-green-50 hover:bg-green-100 px-3 py-2 rounded-md cursor-pointer transition-colors duration-200">
                   <TranslateIcon className="h-4 w-4 text-green-600" />

@@ -17,6 +17,7 @@ urlpatterns = [
     path('auth/', include('djoser.social.urls')),
     path('api/', include('apps.courses.urls')),
     path('api/', include('apps.mathLesson.urls')),
+    path('api/', include('apps.chat.urls')),
     path('admin/', admin.site.urls),
 
 
