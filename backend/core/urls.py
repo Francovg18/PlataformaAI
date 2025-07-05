@@ -19,6 +19,7 @@ urlpatterns = [
     path('api/', include('apps.mathLesson.urls')),
     path('api/', include('apps.chat.urls')),
     path('admin/', admin.site.urls),
+    path('aimara_game_v2/', include('apps.aimara_game_v2.urls')), 
 
 
 ]

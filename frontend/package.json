@@ -42,6 +42,7 @@
     "redux": "^5.0.1",
     "redux-thunk": "^3.1.0",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.22.2",
     "web-vitals": "^2.1.4",
     "workbox-background-sync": "^6.6.0",
     "workbox-broadcast-update": "^6.6.0",

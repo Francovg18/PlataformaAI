@@ -16,6 +16,8 @@ const Dashboard = lazy(() => import('./containers/pages/Dashboard'));
 const Chat = lazy(() => import('./components/Chatbot/Chat'));
 const MathLessonModule = lazy(() => import('./components/course/MathLessonModule'));
 const MathAdventureGame = lazy(() => import('./components/miniGames/MathAdventureGame'));
+const AimaraGame = lazy(() => import('./components/miniGames/AimaraGame'));
+
 function App() {
   return (
     <Provider store={store}>
@@ -41,7 +43,7 @@ function App() {
             <Route path="/matematicas" element={<MathAdventureGame />} />
 
             {/* Error 404 */}
-           
+            <Route path="/aimara-game" element={<AimaraGame />} />
           </Routes>
         </Suspense>
       </Router>

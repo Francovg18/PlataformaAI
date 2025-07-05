@@ -35,7 +35,7 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-PROJECT_APPS = ['apps.user', 'apps.courses', 'apps.mathLesson']
+PROJECT_APPS = ['apps.user', 'apps.courses', 'apps.mathLesson', 'apps.aimara_game_v2']
 ECOMMERCE_APPS = [
                   ]
 THIRD_PARTY_APPS = [

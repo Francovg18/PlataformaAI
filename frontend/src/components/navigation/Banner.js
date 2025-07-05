@@ -30,7 +30,7 @@ const minigames = [
     title: 'Lenguaje y Palabras',
     description: 'Juegos para mejorar tu lectura, ortografía y vocabulario.',
     icon: <AcademicCapIcon className="h-10 w-10 text-purple-600" />,
-    link: '/juegos/lenguaje'
+    link: 'aimara-game' // Assuming this is the correct path for the Aimara game
   }
 ];
 
